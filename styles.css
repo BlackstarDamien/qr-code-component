@@ -1,8 +1,3 @@
-body {
-    background-color: hsl(212, 45%, 89%);
-    font-family: "Outfit", sans-serif;
-}
-
 *, 
 *::before, 
 *::after {
@@ -11,13 +6,24 @@ body {
     box-sizing: border-box;
   }
 
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 #container {
+    width: 400px;
+    height: auto;
     background-color: hsl(0, 0%, 100%);
-    margin: auto;
-    width: 50%;
     border: 3px solid hsl(0, 0%, 100%);
     border-radius: 30px;
     padding: 10px;
+    margin: auto;
 }
 
 #qr-code {
@@ -29,25 +35,25 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 100%;
     border-radius: 20px;
 }
 
 .component-content {
     margin: auto;
-    width: 40%;
     text-align: center;
     padding: 10px;
+    width: 80%;
 }
 
 .component-content #component-header {
     margin-bottom: 15px;
     font-weight: 700;
-    font-size: 15px;
     color: hsl(218, 44%, 22%);
 }
 
 .component-content #component-text {
     font-weight: 400;
+    font-size: 15px;
     color: hsl(212, 45%, 89%);
 }
